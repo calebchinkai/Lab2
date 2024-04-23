@@ -1,7 +1,7 @@
 def get_user_input():    
     user_input=input("Enter some numbers separated by commas (e.g. 5, 67, 32)")
     split=user_input.split(",")
-    numbers_as_floats = [float(split)]
+    numbers_as_floats = [float(num) for num in split]
     return numbers_as_floats
 
 def calculate_statistics(temperatures):
